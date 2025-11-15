@@ -8,16 +8,28 @@ function Gallery() {
   const images = [
     {
       src: fest1,
+<<<<<<< HEAD
+=======
+      caption: "← skriv inn bildetekst her",
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "12. mars 2018",
       time: "kl. 04:55",
     },
     {
       src: fest2,
+<<<<<<< HEAD
+=======
+      caption: "← skriv inn bildetekst her",
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "12. mars 2018",
       time: "kl. 04:58",
     },
     {
       src: fest3,
+<<<<<<< HEAD
+=======
+      caption: "← skriv inn bildetekst her",
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "12. mars 2018",
       time: "kl. 05:03",
     },
@@ -26,7 +38,11 @@ function Gallery() {
   return (
     <section style={styles.gallery}>
       <h2 style={styles.heading}>
+<<<<<<< HEAD
         Første bildan av oss to på min kamerarull- <br/>Såklart tatt mellom kl 04:55 og 05:03<br/>👯‍♀️
+=======
+        Disse bildene ble tatt mellom 04:55 og 05:03
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       </h2>
       <div style={styles.imageContainer}>
         {images.map((img, index) => (
@@ -46,7 +62,11 @@ function Gallery() {
 // 🎨 Styling med pastell og rolig uttrykk
 const styles = {
   gallery: {
+<<<<<<< HEAD
     backgroundColor: "#e0f5edff",
+=======
+    backgroundColor: "#FFF9E3",
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
     padding: "40px 20px",
     textAlign: "center",
   },

@@ -4,6 +4,7 @@ import React from "react";
 function Message() {
   return (
     <section style={styles.message}>
+<<<<<<< HEAD
       <h2 style={styles.heading}>Et lite brev fra meg til deg<br/>💌 </h2>
       <p style={styles.text}>
         Kjære Sissel <br/>
@@ -14,6 +15,11 @@ function Message() {
   <br/>Eg e veldig glad i deg❤️  
   <br/><br/>/Regine
 
+=======
+      <h2 style={styles.heading}>Et lite brev fra meg til deg 💌</h2>
+      <p style={styles.text}>
+        ← Her kommer en personlig tekst
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       </p>
     </section>
   );

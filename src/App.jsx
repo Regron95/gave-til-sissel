@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import Header from "./components/header";
 import Message from "./components/Message";
@@ -42,6 +43,25 @@ function App() {
         </button>
       )}
     </div>
+=======
+import Header from "./components/header";
+import Gallery from "./components/gallery";
+import GalleryFirstTrip from "./components/GalleryFirstTrip";
+import GalleryLastTrip from "./components/GalleryLastTrip";
+import Message from "./components/Message";
+import GiftCard from "./components/GiftCard";
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Gallery />
+      <GalleryFirstTrip />
+      <GalleryLastTrip />
+      <Message />
+      <GiftCard />
+    </>
+>>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
   );
 }
 
