@@ -7,34 +7,20 @@ import ferie3 from "../assets/ferie2.3.jpg";
 function GalleryLastTrip() {
   const images = [
     {
-<<<<<<< HEAD
       src: ferie3,
       caption: "Konemor ute å duppe seg",
-=======
-      src: ferie1,
-      caption: "← skriv inn bildetekst her",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "5. august 2023",
       time: "kl. 13:20",
     },
     {
       src: ferie2,
-<<<<<<< HEAD
       caption: "💞😌",
-=======
-      caption: "← skriv inn bildetekst her",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "6. august 2023",
       time: "kl. 17:45",
     },
     {
-<<<<<<< HEAD
       src: ferie1,
       caption: "Trollmor på svømmetur",
-=======
-      src: ferie3,
-      caption: "← skriv inn bildetekst her",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "7. august 2023",
       time: "kl. 09:10",
     },
@@ -43,11 +29,7 @@ function GalleryLastTrip() {
   return (
     <section style={styles.gallery}>
       <h2 style={styles.heading}>
-<<<<<<< HEAD
         Seinaste ferien sammen – og fortsatt like mye latter, alkohol og rare bilda.
-=======
-        Siste ferie sammen – og fortsatt like mye latter, vin og rare bilder.
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       </h2>
       <div style={styles.imageContainer}>
         {images.map((img, index) => (
@@ -67,11 +49,7 @@ function GalleryLastTrip() {
 // 🎨 Samme stil for visuell helhet
 const styles = {
   gallery: {
-<<<<<<< HEAD
     backgroundColor: "#d9ffebff", // lys blå
-=======
-    backgroundColor: "#F0F4FF", // lys blå
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
     padding: "40px 20px",
     textAlign: "center",
   },
