@@ -4,10 +4,17 @@ import React from "react";
 function Footer({ onRestart }) {
   return (
     <footer style={styles.footer}>
-      <p style={styles.text}>Laget med kjærlighet av <br/>Regine Ronesen<br/>💛</p>
-      <button onClick={onRestart} style={styles.button}>
-        Tilbake til start
-      </button>
+      <p style={styles.text}>
+        Laget med kjærlighet av <br />
+        Regine Ronesen<br />💛
+      </p>
+
+      {/* Bare vis knapp hvis restart-funksjon er sendt inn */}
+      {onRestart && (
+        <button onClick={onRestart} style={styles.button}>
+          🔁 Tilbake til start
+        </button>
+      )}
     </footer>
   );
 }
@@ -15,7 +22,7 @@ function Footer({ onRestart }) {
 const styles = {
   footer: {
     backgroundColor: "#FDF6F0",
-    padding: "10px 200px",
+    padding: "20px",
     textAlign: "center",
     borderTop: "1px solid #E0DAD2",
     marginTop: "60px",

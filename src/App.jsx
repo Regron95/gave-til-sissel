@@ -13,12 +13,14 @@ import "./App.css";
 function App() {
   const [step, setStep] = useState(0);
   const [width, height] = useWindowSize();
+
   const nextStep = () => setStep((prev) => prev + 1);
+  const reset = () => setStep(0);
 
   return (
     <div className="App">
-      {/* 🎊 Konfetti på første og andre steg */}
-      {(step === 0 || step === 1) && <Confetti width={width} height={height} />}
+      {/* 🎊 Konfetti kun på første og siste steg */}
+      {(step === 0 || step === 5) && <Confetti width={width} height={height} />}
 
       {step === 0 && <Header onStart={nextStep} />}
       {step === 1 && <Message />}
@@ -26,7 +28,6 @@ function App() {
       {step === 3 && <GalleryFirstTrip />}
       {step === 4 && <GalleryLastTrip />}
       {step === 5 && <GiftCard />}
-      <Footer />
 
       {/* Neste-knapp mellom steg 1–4 */}
       {step > 0 && step < 5 && (
@@ -34,6 +35,9 @@ function App() {
           Neste steg →
         </button>
       )}
+
+      {/* Footer kun på siste steg */}
+      {step === 5 && <Footer onRestart={reset} />}
     </div>
   );
 }
