@@ -8,17 +8,12 @@ function GalleryFirstTrip() {
   const images = [
     {
       src: ferie1,
-<<<<<<< HEAD
       caption: "På tur å drikke alkohol",
-=======
-      caption: "← skriv inn bildetekst her",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "20. juli 2019",
       time: "kl. 11:42",
     },
     {
       src: ferie2,
-<<<<<<< HEAD
       caption: "Drakk alkohol",
       date: "21. juli 2019",
       time: "Ukjent tidspunkt men sikkert sent",
@@ -26,15 +21,6 @@ function GalleryFirstTrip() {
     {
       src: ferie3,
       caption: "Venta sikkert på alkohol",
-=======
-      caption: "← skriv inn bildetekst her",
-      date: "21. juli 2019",
-      time: "kl. 15:10",
-    },
-    {
-      src: ferie3,
-      caption: "← skriv inn bildetekst her",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       date: "22. juli 2019",
       time: "kl. 09:05",
     },
@@ -43,11 +29,7 @@ function GalleryFirstTrip() {
   return (
     <section style={styles.gallery}>
       <h2 style={styles.heading}>
-<<<<<<< HEAD
         Første ferie sammen – og starten på en tradisjon vi aldri helt klarte å holde fast ved😂
-=======
-        Første ferie sammen – og starten på en tradisjon vi aldri helt har sluttet med.
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
       </h2>
       <div style={styles.imageContainer}>
         {images.map((img, index) => (
@@ -67,11 +49,7 @@ function GalleryFirstTrip() {
 // 🎨 Styling beholdes lik for visuell kontinuitet
 const styles = {
   gallery: {
-<<<<<<< HEAD
     backgroundColor: "#fff1c2ff", // lys turkis
-=======
-    backgroundColor: "#E8F8F5", // lys turkis
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
     padding: "40px 20px",
     textAlign: "center",
   },
@@ -85,12 +63,8 @@ const styles = {
   },
   imageContainer: {
     display: "flex",
-<<<<<<< HEAD
     flexWrap: "wrap",
-      justifyContent: "center",
-=======
-    flexDirection: "column",
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
+    justifyContent: "center",
     gap: "30px",
     alignItems: "center",
   },
