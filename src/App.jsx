@@ -1,67 +1,34 @@
-<<<<<<< HEAD
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./components/header";
 import Message from "./components/Message";
 import Gallery from "./components/gallery";
 import GalleryFirstTrip from "./components/GalleryFirstTrip";
 import GalleryLastTrip from "./components/GalleryLastTrip";
 import GiftCard from "./components/GiftCard";
-import Footer from "./components/Footer";
-import ConfettiEffect from "./components/ConfettiEffect";
 import "./App.css";
 
 function App() {
   const [step, setStep] = useState(0);
   const nextStep = () => setStep((prev) => prev + 1);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [step]);
-
   return (
     <div className="App">
-      {step === 0 && (
-        <>
-          <ConfettiEffect />
-          <Header onStart={nextStep} />
-        </>
-      )}
+      {step === 0 && <Header onStart={nextStep} />}
       {step === 1 && <Message />}
       {step === 2 && <Gallery />}
-      {step === 3 && <GalleryFirstTrip />}
-      {step === 4 && <GalleryLastTrip />}
-      {step === 5 && (
+      {step === 3 && (
         <>
-          <ConfettiEffect />
-          <GiftCard />
-          <Footer onRestart={() => setStep(0)} />
+          <GalleryFirstTrip />
+          <GalleryLastTrip />
         </>
       )}
-      {step > 0 && step < 5 && (
+      {step === 4 && <GiftCard />}
+      {step > 0 && step < 4 && (
         <button onClick={nextStep} className="next-btn">
           Neste steg →
         </button>
       )}
     </div>
-=======
-import Header from "./components/header";
-import Gallery from "./components/gallery";
-import GalleryFirstTrip from "./components/GalleryFirstTrip";
-import GalleryLastTrip from "./components/GalleryLastTrip";
-import Message from "./components/Message";
-import GiftCard from "./components/GiftCard";
-
-function App() {
-  return (
-    <>
-      <Header />
-      <Gallery />
-      <GalleryFirstTrip />
-      <GalleryLastTrip />
-      <Message />
-      <GiftCard />
-    </>
->>>>>>> d61edf806c02ef9b3b9ca5f74051ffca88601c44
   );
 }
 
