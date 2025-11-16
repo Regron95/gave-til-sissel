@@ -12,7 +12,7 @@ function Footer({ onRestart }) {
       {/* Bare vis knapp hvis restart-funksjon er sendt inn */}
       {onRestart && (
         <button onClick={onRestart} style={styles.button}>
-          🔁 Tilbake til start
+          Tilbake til start
         </button>
       )}
     </footer>
@@ -36,7 +36,7 @@ const styles = {
   button: {
     fontSize: "0.9rem",
     padding: "10px 20px",
-    backgroundColor: "#FFF9E3",
+    backgroundColor: "#fedafcff",
     border: "1px solid #E0DAD2",
     borderRadius: "8px",
     fontFamily: "Inter, sans-serif",

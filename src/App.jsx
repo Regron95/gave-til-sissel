@@ -32,7 +32,7 @@ function App() {
       {/* Neste-knapp mellom steg 1–4 */}
       {step > 0 && step < 5 && (
         <button onClick={nextStep} className="next-btn">
-          Neste steg →
+          Neste →
         </button>
       )}
 

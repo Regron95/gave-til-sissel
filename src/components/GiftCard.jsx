@@ -5,7 +5,7 @@ import centralbad from "../assets/centralbad.jpeg";
 function GiftCard() {
   return (
     <section style={styles.card}>
-      <h2 style={styles.heading}>Din gave 🎁</h2>
+      <h2 style={styles.heading}>Din bursdagsgave 🎁</h2>
       <img src={centralbad} alt="Centralbadet" style={styles.image} />
       <div style={styles.giftBox}>
         <p style={styles.text}>
